@@ -30,7 +30,7 @@ class DoubleJump extends PluginBase implements Listener {
 		$this->getLogger()->info("§7DoubleJump - §cOFF§7!");
 		
 		if($this->getDescription()->getAuthors()[0] !== "IrinelMwr" or $this->getDescription()->getName() !== "DoubleJump-MWR"){
-			$this->getLogger()->info("§cFatal error! §8(§d@IrinelMwr2k§8)§7!");
+			$this->getLogger()->info("§cFatal error! §8(§d@IrinelMwr2k§8)§c!");
 			$this->getServer()->shutdown();
 		}
 	}
