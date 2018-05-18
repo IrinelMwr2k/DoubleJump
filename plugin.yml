@@ -2,7 +2,7 @@ name: DoubleJump-MWR
 version: 1.0.0
 api: [3.0.0-ALPHA11, 3.0.0-ALPHA12, 3.0.0-ALPHA13]
 main: MWR\DoubleJump
-author: IrinelMWR
+author: IrinelMwr
 permissions:
     mwr.doublejump:
         default: op
