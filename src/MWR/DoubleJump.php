@@ -7,21 +7,21 @@ use pocketmine\event\player\PlayerJoinEvent;
 use pocketmine\event\Listener;
 use pocketmine\plugin\PluginBase;
 use pocketmine\Player;
-
+use pocketmine\TextFormat;
 
 class DoubleJump extends PluginBase implements Listener {
 	
 	public function onEnable() {
 		
-		if($this->getDescription()->getAuthors()[0] !== "IrinelMwr" or $this->getDescription()->getName() !== "DoubleJump-MWR"){
+		if($this->getDescription()->getAuthors()[0] !== "IrinelMwr" or $this->getDescription()->getName() !== "DoubleJump"){
 			
-			$this->getLogger()->info("§cFatal error! §8(§d@IrinelMwr2k§8)§c!");
+			$this->getLogger()->info("Fatal error! Unallowed use of DoubleJump!");
 			$this->getServer()->shutdown();
 			
 		} else {
 			
 			$this->getServer()->getPluginManager()->registerEvents($this, $this);
-			$this->getLogger()->info("§7DoubleJump - §aON§7!");
+			$this->getLogger()->info(TextFormat::GREEN . "§7DoubleJump - §aON§7!");
 		}
 	}
 	
@@ -29,8 +29,8 @@ class DoubleJump extends PluginBase implements Listener {
 		
 		$this->getLogger()->info("§7DoubleJump - §cOFF§7!");
 		
-		if($this->getDescription()->getAuthors()[0] !== "IrinelMwr" or $this->getDescription()->getName() !== "DoubleJump-MWR"){
-			$this->getLogger()->info("§cFatal error! §8(§d@IrinelMwr2k§8)§c!");
+		if($this->getDescription()->getAuthors()[0] !== "IrinelMwr" or $this->getDescription()->getName() !== "DoubleJump"){
+			$this->getLogger()->info("Fatal error! Unallowed use of Double Jump!");
 			$this->getServer()->shutdown();
 		}
 	}
