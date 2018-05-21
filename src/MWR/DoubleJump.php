@@ -21,7 +21,7 @@ class DoubleJump extends PluginBase implements Listener {
 		} else {
 			
 			$this->getServer()->getPluginManager()->registerEvents($this, $this);
-			$this->getLogger()->info(TextFormat::GREEN . "§7DoubleJump - §aON§7!");
+			$this->getLogger()->info("§7DoubleJump - §aON§7!");
 		}
 	}
 	
